@@ -228,7 +228,7 @@ maxLen: n['CHARACTER_MAXIMUM_LENGTH']||'',
 nullable: (n['IS_NULLABLE']||'').toUpperCase(),
 defVal: n['COLUMN_DEFAULT']||'',
 isPK: (n['IS_PRIMARY_KEY']||'NO').toUpperCase(),
-colDesc: n['column_description']||'',
+colDesc: n['column_description']||n['COLUMN_DESCRIPTION']||'',
 };
 }
 
